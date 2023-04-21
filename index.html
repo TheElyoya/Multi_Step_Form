@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Multi Step Form</title>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;700&family=Climate+Crisis&family=Jomhuria&family=Open+Sans:wght@300;400;500;700&family=Poppins:wght@200;300;400;500;600;700;800;900&family=Roboto+Mono&family=Roboto:wght@300;400;500;700&family=Work+Sans:wght@200;300;400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- css styles -->
+    <link rel="stylesheet" href="styles.css" />
+    <!-- main script -->
+    <script src="script.js" defer></script>
+    <link rel="shortcut icon" href="imgs/form.png" type="image/png" />
+  </head>
+  <body>
+    <form id="form">
+      <div class="card" data-form-steps>
+        <div class="card-title">
+          <h3>Create Your Account</h3>
+        </div>
+        <div class="inputs">
+          <input
+            type="email"
+            required
+            name="email"
+            id="email"
+            placeholder="Email"
+          />
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="Password"
+            required
+          />
+          <input
+            type="password"
+            name="pass-confirm"
+            id="pass2"
+            placeholder="Confirm Password"
+            required
+          />
+        </div>
+        <div class="small"><small>Passwords does not match</small></div>
+        <div class="only-button">
+          <button type="button" data-next>Next</button>
+        </div>
+      </div>
+      <div class="card" data-form-steps>
+        <div class="card-title">
+          <h3>Social Profiles</h3>
+        </div>
+        <div class="inputs">
+          <input
+            type="text"
+            name="twitter"
+            id="twitter"
+            placeholder="Twitter"
+          />
+          <input
+            type="text"
+            name="facebook"
+            id="facebook"
+            placeholder="Facebook"
+          />
+          <input
+            type="text"
+            name="instagram"
+            id="instagram"
+            placeholder="Instagram"
+          />
+        </div>
+        <div class="buttons">
+          <button type="button" data-pre>Previous</button>
+          <button type="button" data-next>Next</button>
+        </div>
+      </div>
+      <div class="card" data-form-steps>
+        <div class="card-title">
+          <h3>Personal Details</h3>
+        </div>
+        <div class="inputs">
+          <input
+            type="text"
+            name="f-name"
+            id="f-name"
+            placeholder="First Name"
+            required
+          />
+          <input
+            type="text"
+            name="l-name"
+            id="l-name"
+            placeholder="Last Name"
+            required
+          />
+          <input
+            type="tel"
+            name="phone"
+            id="phone"
+            placeholder="Phone"
+            required
+          />
+        </div>
+        <div class="adress">
+          <textarea placeholder="Address" name="adress" id="adress"></textarea>
+        </div>
+        <div class="buttons">
+          <button type="button" data-pre>Previous</button>
+          <button type="submit">Submit</button>
+        </div>
+      </div>
+    </form>
+    <div id="preloader">
+      <div id="loader"></div>
+    </div>
+  </body>
+</html>
